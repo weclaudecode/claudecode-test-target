@@ -39,3 +39,5 @@ installed into this repo first (see the kit's README in the source repo).
    `safety_block` category should kick in (Phase 3)._
 
 <!-- sweep-merges smoke fixture -->
+
+<!-- review-pass smoke fixture -->
