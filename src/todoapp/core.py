@@ -20,3 +20,11 @@ def add_todo(title: str) -> Todo:
     todo = Todo(id=next(_id_seq), title=title)
     _store.append(todo)
     return todo
+
+
+def complete_todo(id: int) -> Todo:
+    todo = next((t for t in _store if t.id == id), None)
+    if todo is None:
+        raise KeyError(id)
+    todo.done = True
+    return todo
