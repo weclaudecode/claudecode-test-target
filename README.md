@@ -37,3 +37,5 @@ installed into this repo first (see the kit's README in the source repo).
 6. **Add IAM role for future Lambda deploy** — new `infra/iam.tf`
    _Sensitive: hits the IAM pattern detector → ingest flags it; reviewer
    `safety_block` category should kick in (Phase 3)._
+
+<!-- sweep-merges smoke fixture -->
