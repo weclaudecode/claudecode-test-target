@@ -3,10 +3,20 @@ name = "todoapp"
 version = "0.1.0"
 description = "Orchestrator test target — minimal todo library"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "boto3>=1.35",
+    "aws-lambda-powertools>=3.0",
+    "strands-agents",
+    "bedrock-agentcore",
+]
 
 [dependency-groups]
-dev = ["pytest>=8.0"]
+dev = [
+    "pytest>=8",
+    "moto[cloudtrail]>=5",
+    "aws-cdk-lib>=2.150",
+    "constructs>=10",
+]
 
 [build-system]
 requires = ["hatchling"]
