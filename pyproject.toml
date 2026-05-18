@@ -16,6 +16,7 @@ dev = [
     "moto[cloudtrail]>=5",
     "aws-cdk-lib>=2.150",
     "constructs>=10",
+    "aws-xray-sdk>=2.12",
 ]
 
 [build-system]
@@ -27,3 +28,4 @@ packages = ["src/todoapp"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["lambda"]
